@@ -7,18 +7,6 @@ Calculates Customer Lifetime Value (CLTV) and Net Retention Value
 Flags revenue at risk from high-churn segments
 Lets you explore everything interactively through slicers, conditional formatting, and a map visual
 
-telco-customer-churn-IBM/
-
-├── data/
-│   ├── Customer-Churn.xlsx
-│   └── processed/customer_churn_phase3_prep.xlsx
-├── notebooks/
-│   ├── RFM_Customer_Chern.ipynb    # EDA, RFM scoring, CLTV
-│   └── ML_Customer_Churn.ipynb     # Churn probability model
-├── powerbi/
-│   └── Phase5_Dashboard.pbix
-└── README.md
-
 **Stack**
 LayerToolsData ProcessingPython, Pandas, NumPyMachine LearningScikit-learnDatabaseSQL Server Express (Azure Data Studio)VisualizationPower BI Desktop
 
