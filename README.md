@@ -6,7 +6,7 @@
 
 ## 📊 Live Dashboard Preview
 
-![Telco Customer Churn Dashboard](dashboard_preview.png)
+![Telco Customer Churn Dashboard](Link: https://app.powerbi.com/groups/me/reports/86bd8f28-2df8-4667-9ff1-89204d7726c0/7ef2200b94041b40a59d?experience=power-bi)
 
 > *Built in Power BI using the IBM Telco Customer Churn Dataset (7,032 customers)*
 
@@ -29,22 +29,17 @@ Customer churn is one of the most costly problems in the telecom industry. This 
 telco-churn-ltv-engine/
 │
 ├── data/
-│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv   # Raw IBM Telco dataset
+│   ├── WA_Fn-UseC_-Telco-Customer-Churn.xlsx   # Raw IBM Telco dataset
 │   └── processed/
-│       └── telco_features.csv                  # Engineered feature set
+│       └── customer_churn_phase3_prep.xlsx                  # Engineered feature set
 │
 ├── notebooks/
-│   ├── 01_EDA.ipynb                            # Exploratory Data Analysis
-│   ├── 02_Feature_Engineering.ipynb            # RFM + CLTV calculations
-│   └── 03_Churn_Model.ipynb                    # Churn probability model
+│   ├── RFM_Customer_Chern.ipynb           # Exploratory Data Analysis | RFM + CLTV calculations
+│   ├── ML_Customer_Churn.ipynb            # Churn probability model
+│   
 │
 ├── powerbi/
 │   └── Phase5_Dashboard.pbix                   # Power BI dashboard file
-│
-├── sql/
-│   └── churn_queries.sql                       # SQL queries for analysis
-│
-├── requirements.txt
 └── README.md
 ```
 
@@ -144,21 +139,15 @@ git clone https://github.com/yourusername/telco-churn-ltv-engine.git
 cd telco-churn-ltv-engine
 ```
 
-### 2. Install Python Dependencies
-```bash
-pip install -r requirements.txt
-```
-
 ### 3. Run the Notebooks in Order
 ```bash
-jupyter notebook notebooks/01_EDA.ipynb
-jupyter notebook notebooks/02_Feature_Engineering.ipynb
-jupyter notebook notebooks/03_Churn_Model.ipynb
+jupyter notebook notebooks/RFM_Customer_Chern.ipynb
+jupyter notebook notebooks/ML_Customer_Churn.ipynb
 ```
 
 ### 4. Open the Dashboard
 - Open `powerbi/Phase5_Dashboard.pbix` in **Power BI Desktop**
-- Refresh the data source to point to your local `data/processed/telco_features.csv`
+- Refresh the data source to point to your local `data/processed/customer_churn.xlsx`
 
 ---
 
@@ -208,16 +197,8 @@ openpyxl>=3.0.0
 
 ## 👤 Author
 
-**Zuhair**
-- 📧 your.email@example.com
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)
-- 🐙 [GitHub](https://github.com/yourusername)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+**Zuhair Khan**
+- 💼 [LinkedIn] (https://www.linkedin.com/in/zuhair-khan-12095116b/)
 
 ---
 
@@ -225,4 +206,3 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - IBM for the Telco Customer Churn dataset
 - Microsoft Power BI community for DAX resources
-- Anthropic Claude for development assistance
